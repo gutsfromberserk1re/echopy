@@ -9,14 +9,14 @@ Press Space, talk, press Space again. That's it.
 
 <br>
 
-<a href="https://github.com/YOUR_USERNAME/YOUR_REPO/releases/latest/download/Echo.exe">
+<a href="https://github.com/gutsfromberserk1re/echopy/releases/">
   <img src="https://img.shields.io/badge/%E2%AC%87%20%20Download%20Echo.exe-ed2732?style=for-the-badge&labelColor=1a1e22" alt="Download Echo.exe" height="46">
 </a>
 
 <br><br>
 
-<img src="https://img.shields.io/github/actions/workflow/status/YOUR_USERNAME/YOUR_REPO/build.yml?branch=main&style=flat-square&label=build&labelColor=1a1e22" alt="Build status">
-<img src="https://img.shields.io/github/last-commit/YOUR_USERNAME/YOUR_REPO?style=flat-square&labelColor=1a1e22" alt="Last commit">
+<img src="https://img.shields.io/github/actions/workflow/status/gutsfromberserk1re/echopy/build.yml?branch=main&style=flat-square&label=build&labelColor=1a1e22" alt="Build status">
+<img src="https://img.shields.io/github/last-commit/gutsfromberserk1re/echopy?style=flat-square&labelColor=1a1e22" alt="Last commit">
 <img src="https://img.shields.io/badge/platform-Windows-3a4046?style=flat-square&labelColor=1a1e22" alt="Windows">
 
 </div>
@@ -25,7 +25,7 @@ Press Space, talk, press Space again. That's it.
 
 ## What it is
 
-Echo is a small desktop recorder with a pretty interface. You hit record when you're done you save a normal `.wav` file. No account, no cloud, no settings maze.
+Echo is a small desktop recorder with a pretty interface. You hit record when you're done you save a normal `.wav` file. No account.
 
 It's built with Python and Qt (PySide6).
 
