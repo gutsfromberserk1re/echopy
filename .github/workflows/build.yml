@@ -1,4 +1,3 @@
-```yaml
 name: Build Echo
 
 on:
@@ -42,4 +41,3 @@ jobs:
           path: build/Echo.exe
           if-no-files-found: error
           retention-days: 14
-```
