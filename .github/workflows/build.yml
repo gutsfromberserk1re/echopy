@@ -3,7 +3,8 @@ name: Build Echo
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
     paths-ignore:
       - "**.md"
   workflow_dispatch:
@@ -29,25 +30,12 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install PySide6 sounddevice numpy
-          python -m pip install "Nuitka[onefile]"
+          python -m pip install Nuitka ordered-set zstandard
 
       - name: Build single-file executable
-        shell: cmd
-        run: |
-          python -m nuitka ^
-            --mode=onefile ^
-            --enable-plugin=pyside6 ^
-            --windows-console-mode=disable ^
-            --output-dir=build ^
-            --output-filename=Echo.exe ^
-            --assume-yes-for-downloads ^
-            echo.py
+        run: python -m nuitka --mode=onefile --enable-plugin=pyside6 --windows-console-mode=disable --assume-yes-for-downloads --output-dir=build --output-filename=Echo.exe echo.py
 
-      - name: Include icon if available
-        if: false
-        run: echo Optional icon configuration
-
-      - name: Upload Echo.exe
+      - name: Upload executable
         uses: actions/upload-artifact@v4
         with:
           name: Echo-Windows-x64
